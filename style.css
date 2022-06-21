@@ -1,0 +1,271 @@
+:root {
+    --cor-fonte-principal: #667085;
+    --cor-da-logo: #3A404E;
+    --cor-botao: #8E2424;
+    --cor-branco: #FFFFFF;
+    --cor-preto: #101828;
+    --cor-rodape: #F9FAFB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: auto; 
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 2em;
+    align-items: center;
+}
+
+.cabecalho__nome {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    margin-right: 1em;
+}
+
+.cabecalho__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-da-logo);
+}
+
+.cabecalho__menu {
+    padding-left: 13em;
+}
+
+.cabecalho__link {
+    margin-left: 3em;
+    text-decoration: none;
+    color: var(--cor-fonte-principal); 
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.cabecalho__botao {
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-botao);
+    background-color: var(--cor-botao);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.container__sobre {
+    padding: 5em 26%;
+}
+
+.sobre__nos {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--cor-botao);
+}
+
+.sobre__titulo {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--cor-preto);
+    margin: 1em 0;
+}
+
+.sobre__texto {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-fonte-principal);
+}
+
+.container__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.info__div {
+    padding: 4em;
+}
+
+.info__numero {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-botao);
+}
+
+.info__conquistas {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+
+.info__texto {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-fonte-principal);
+}
+
+.vagas {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.vagas__anuncio {
+    color: var(--cor-botao);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(142, 36, 36, 0.05);
+    display: inline;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+.vagas__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-preto);
+    margin: 1em 0;
+}
+
+.vagas__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-da-logo);
+    margin-bottom: 2em;
+}
+
+.vagas__imagem {
+    width: 90vw;
+}
+
+.container__vagas {
+   width: 1080px;
+   margin: 0 auto;
+}
+
+.vaga__setor {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-preto);
+    margin: 3em 1em;
+}
+
+.vagas__div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2em;
+    margin: 1em;
+    padding: 2em;
+    border: 1px solid #EAECF0;
+    border-radius: 10px;
+}
+
+.vaga__cargo {
+    grid-column: span 2;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+
+.vaga__info {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-fonte-principal);
+}
+
+.comentarios {
+    text-align: center;
+    border: 1px solid rgba(196, 25, 25, 0.03);
+    border-radius: 10px;
+    padding: 3em;
+    background-color: rgba(196, 25, 25, 0.03);
+    width: 80vw;
+    margin: 4em auto;
+}
+
+.comentarios__titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-botao);
+}
+
+.comentarios__texto {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--cor-preto);
+    margin: 1em 7em;
+}
+
+.comentarios__imagem {
+    height: 56px;
+    width: 56px;
+}
+
+.comentarios__autor {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-preto);
+    margin: 1em 0;
+}
+
+.comentarios__profissao {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-fonte-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 4em auto;
+    padding: 5em;
+    background-color: var(--cor-rodape);
+}
+
+.rodape__titulo {
+    font-size: 36px;
+    font-weight: 600;    
+}
+
+.rodape__texto {
+    font-size: 20px;
+    font-weight: 400px;
+    color: var(--cor-fonte-principal);
+    margin: 2em;
+}
+
+.rodape__caixa {
+    width: 360px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+    border: 2px solid #EAECF0;
+    margin: 0 0 2em 0;
+}
+
+.rodape__link {
+    margin-left: 1em;  
+    font-size: 16px;
+    font-weight: 500; 
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+}
+
+.rodape__copy {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-fonte-principal);
+}
