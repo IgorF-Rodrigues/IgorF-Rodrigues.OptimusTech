@@ -59,6 +59,10 @@ body {
     border-radius: 10px;
 }
 
+.cabecalho__botao:hover {
+    background-color: 8A1414;
+{    
+
 .container__sobre {
     padding: 5em 26%;
 }
