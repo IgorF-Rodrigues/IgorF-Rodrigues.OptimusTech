@@ -1,0 +1,111 @@
+.vagas {
+    text-align: center;
+}
+
+.vagas__anuncio {
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 10px;
+    color: var(--cor-botao);
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px;
+}
+
+.vagas__titulo {
+    color: var(--cor-preto);
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.vagas__texto {
+    color: var(--cor-da-logo);
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.container__vagas { 
+    margin: 0 auto;
+}
+
+.vaga__setor {
+    color: var(--cor-preto);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vagas__div {
+    border: 1px solid #EAECF0;
+    border-radius: 10px;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto 1fr;
+    margin: 1em;
+    padding: 2em;
+}
+
+.vaga__cargo {
+    color: var(--cor-preto);
+    font-size: 18px;
+    font-weight: 500;
+    grid-column: span 2;
+}
+
+.vaga__info {
+    color: var(--cor-fonte-principal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 0) {
+    .vagas {
+        margin: 2em 0;
+    }
+    
+    .vagas__titulo {
+        font-size: 30px;         
+    }
+
+    .vagas__texto {
+        font-size: 16px;
+    }
+
+    .vagas__imagem {
+        width: 100vw;
+    }
+
+    .container__vagas { 
+        width: 90vw;
+    }
+
+    .vaga__setor {
+        margin: 2em 1em;
+    }
+    
+}
+
+@media screen and (min-width: 998px) {
+    .vagas {
+        margin: 5em 0;
+    }
+
+    .vagas__titulo {
+        font-size: 36px;
+    }
+
+    .vagas__texto {
+        font-size: 20px;
+    }
+
+    .vagas__imagem {
+        width: 90vw;
+    }
+
+    .container__vagas { 
+        width: 1080px;
+    }
+
+    .vaga__setor {
+        margin: 3em 1em;
+    }
+}

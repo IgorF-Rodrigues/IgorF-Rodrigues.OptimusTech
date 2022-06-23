@@ -1,0 +1,50 @@
+
+
+.info__numero {
+    color: var(--cor-botao);
+    font-weight: 600;
+}
+
+.info__conquistas {
+    color: var(--cor-preto);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info__texto {
+    color: var(--cor-fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 0) {
+    .container__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info__div {
+        padding: 2em 1em;
+    }
+
+    .info__numero {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .container__info {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .info__div {
+        padding: 4em;
+    }
+
+    .info__numero {
+        font-size: 60px;
+    }
+}
