@@ -1,0 +1,121 @@
+
+.cabecalho__nome {
+    align-items: center;
+    display: flex;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-da-logo);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cabecalho__link {
+    color: var(--cor-fonte-principal); 
+    font-weight: 500; 
+    text-decoration: none;
+}
+
+.cabecalho__botao {
+    background-color: var(--cor-botao);
+    border: 1px solid var(--cor-botao);
+    border-radius: 10px;
+    color: var(--cor-branco);
+    
+}
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho__nome {
+        display: flex;
+    }
+
+    .cabecalho__logo {
+        margin-right: 0.5em;
+        width: 30px;
+    }
+
+    .cabecalho__titulo {
+       font-size: 30px;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cabecalho__link {
+        font-size: 15px;
+        border-bottom: 1px solid var(--cor-botao);
+    }
+
+    .entrar {
+        color: var(--cor-botao);
+        margin-bottom: 0.5em;
+        font-size: 15px;
+    }
+
+    .cabecalho__botao {
+        padding: 0.5em;
+        
+    }    
+
+    .cabecalho__login {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .cabecalho {
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 2em;
+    }
+
+    .cabecalho__nome {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho__logo {
+        margin-right: 1em;
+        width: 24px;
+    }
+
+    .cabecalho__titulo {
+      display: block;
+    }
+
+    .cabecalho__menu {
+        padding-left: 2em;
+        flex-direction: row;
+    }
+
+    .cabecalho__link {
+        font-size: 16px;
+        margin-left: 3em;
+        border-bottom: none;
+    }
+
+    .entrar {
+        color: var(--cor-fonte-principal);
+    }
+
+    .cabecalho__botao {
+        padding: 1em;
+    }  
+
+    .cabecalho__login {
+      display: inline;
+    }
+}
